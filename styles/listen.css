@@ -1,0 +1,441 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "K2D", sans-serif;
+}
+.listen-div {
+  display: flex;
+  height: 90vh;
+}
+.listen1 {
+  display: flex;
+  flex-direction: column;
+  width: 45vw;
+  margin: 2rem 1rem 0.5rem 4rem;
+  /* align-items: center; */
+  justify-content: center;
+}
+.listen1 > h2 {
+  font-size: 4.75rem;
+  padding-bottom: 2rem;
+  font-weight: 700;
+  color: #21282e;
+  /* font-size: 2.75rem; */
+}
+.h2-rec {
+  background: linear-gradient(
+    90deg,
+    rgba(222, 166, 58, 0.3) -19.81%,
+    #dea63a 109.63%
+  );
+  background-size: 300px 35px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.listen1 > p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-weight: 200;
+  color: #21282e;
+}
+.listen1 > button {
+  width: 12rem;
+  height: 4rem;
+  background-color: #dea63a;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  border: #dea63a;
+  align-items: flex-start;
+}
+.listen1 > button:hover {
+  background-color: #21282e;
+  cursor: pointer;
+}
+
+/* Styling of the instrument image carousel */
+
+.listen2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/styles/images/listen2\ bcg.svg);
+  width: 55vw;
+}
+.instruments {
+  display: flex;
+  /* border: 2px solid blue; */
+  border-radius: 100%;
+  position: relative;
+  width: 32vw;
+  height: 32vw;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.instruments > img {
+  /* border: 2px solid #dea63a; */
+  border-radius: 100%;
+  padding: 0.5rem;
+  width: 28%;
+}
+#center-instrument {
+  /* border: 3px solid green; */
+  margin: auto;
+  position: relative;
+  width: 70%;
+}
+
+/* Styling and animation for the music equaliser icon */
+
+.equaliser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.equaliser > span {
+  /* border: 2px solid red; */
+  display: inline-block;
+  height: 2rem;
+  width: 0.3rem;
+  margin: 0.2rem;
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+}
+#line1 {
+  height: 44px;
+  /* animation: equaliser1 0.7s linear infinite forwards; */
+}
+#line2 {
+  height: 67px;
+  /* animation: equaliser2 0.7s linear infinite forwards; */
+}
+#line3 {
+  height: 44px;
+  /* animation: equaliser3 0.7s linear infinite forwards; */
+}
+#line4 {
+  height: 30px;
+  /* animation: equaliser4 0.7s linear infinite forwards; */
+}
+@keyframes equaliser1 {
+  0% {
+    height: 67px;
+  }
+  25% {
+    height: 44px;
+  }
+  50% {
+    height: 30px;
+  }
+  75% {
+    height: 17px;
+  }
+  100% {
+    height: 44px;
+  }
+}
+@keyframes equaliser2 {
+  0% {
+    height: 44px;
+  }
+  25% {
+    height: 67px;
+  }
+  50% {
+    height: 44px;
+  }
+  75% {
+    height: 30px;
+  }
+  100% {
+    height: 67px;
+  }
+}
+@keyframes equaliser3 {
+  0% {
+    height: 30px;
+  }
+  25% {
+    height: 44px;
+  }
+  50% {
+    height: 67px;
+  }
+  75% {
+    height: 45px;
+  }
+  100% {
+    height: 46px;
+  }
+}
+@keyframes equaliser4 {
+  0% {
+    height: 17px;
+  }
+  25% {
+    height: 30px;
+  }
+  50% {
+    height: 47px;
+  }
+  75% {
+    height: 68px;
+  }
+  100% {
+    height: 30px;
+  }
+}
+.play-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 4.625rem;
+  width: 4.625rem;
+  position: absolute;
+  bottom: 13%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #21282e;
+  padding: 1rem;
+}
+#pause {
+  display: none;
+}
+.left-button {
+  width: 5em;
+  position: absolute;
+  top: 0;
+  left: 5%;
+}
+.right-button {
+  width: 5rem;
+  position: absolute;
+  top: 0;
+  right: 5%;
+}
+.instrument1 {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-100%);
+  left: -15%;
+}
+.instrument2 {
+  position: absolute;
+  top: 65%;
+  left: -7%;
+}
+.instrument3 {
+  position: absolute;
+  bottom: -18%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.instrument4 {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-100%);
+  right: -15%;
+}
+.instrument5 {
+  position: absolute;
+  top: 65%;
+  right: -7%;
+}
+@media (min-width: 150px) and (max-width: 499px) {
+  .listen-div {
+    /* border: 2px solid pink; */
+    height: fit-content;
+    flex-direction: column;
+    margin-top: 6rem;
+  }
+  .listen1 {
+    margin: 1rem;
+    width: 80vw;
+  }
+  .listen1 > h2 {
+    padding-bottom: 1rem;
+    font-size: 3rem;
+  }
+  .h2-rec {
+    background-size: 300px 30px;
+  }
+  .listen1 > p {
+    font-size: 1.1rem;
+  }
+  .listen1 > button {
+    width: 8rem;
+    height: 3rem;
+  }
+  .listen1 > button {
+    margin-bottom: 2rem;
+    width: 10rem;
+    height: 3rem;
+  }
+  .listen2 {
+    width: 100vw;
+    background-size: cover;
+    margin-bottom: 3rem;
+  }
+  .instruments {
+    width: 65vw;
+    height: 65vw;
+  }
+  .instruments > img {
+    width: 30%;
+  }
+  .left-button > svg,
+  .right-button > svg {
+    width: 85%;
+  }
+  .left-button,
+  .right-button {
+    top: -15%;
+  }
+  .play-icon {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+@media (min-width: 500px) and (max-width: 660px) {
+  .listen-div {
+    /* border: 2px solid forestgreen; */
+    height: fit-content;
+    flex-direction: column;
+  }
+  .listen1 {
+    width: 80vw;
+  }
+  .listen1 > h2 {
+    padding-bottom: 1rem;
+    font-size: 4rem;
+  }
+  .h2-rec {
+    background-size: 300px 30px;
+  }
+  .listen1 > p {
+    font-size: 1.2rem;
+  }
+  .listen1 > button {
+    margin-bottom: 2rem;
+    width: 10rem;
+    height: 3rem;
+  }
+  .listen2 {
+    width: 100vw;
+    background-size: cover;
+    margin-bottom: 3rem;
+  }
+  .instruments {
+    width: 55vw;
+    height: 55vw;
+  }
+  .instruments > img {
+    width: 25%;
+  }
+  .left-button > svg,
+  .right-button > svg {
+    width: 75%;
+  }
+  .play-icon {
+    height: 4rem;
+    width: 4rem;
+  }
+  .left-button {
+    top: -5%;
+  }
+  .right-button {
+    top: -5%;
+  }
+}
+@media (min-width: 661px) and (max-width: 720px) {
+  .listen-div {
+    flex-direction: column;
+    height: fit-content;
+    /* height: 90vh; */
+  }
+  .listen1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+  }
+  .listen1 > h2 {
+    padding-bottom: 1.5rem;
+    font-size: 4rem;
+  }
+  .h2-rec {
+    background-size: 300px 30px;
+  }
+  .listen1 > p {
+    font-size: 1.5rem;
+  }
+  .listen1 > button {
+    margin-bottom: 2rem;
+    width: 10rem;
+    height: 3rem;
+  }
+  .listen2 {
+    width: 100vw;
+    height: 100%;
+    background-size: cover;
+    padding-bottom: 3rem;
+  }
+  .instruments {
+    width: 65vw;
+    height: 65vw;
+  }
+  .instruments > img {
+    width: 23%;
+  }
+}
+@media (min-width: 721px) and (max-width: 1059px) {
+  .listen-div {
+    display: flex;
+    height: fit-content;
+  }
+  .listen1 {
+    margin-left: 2rem;
+    width: 40vw;
+  }
+  .listen1 > h2 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
+  .h2-rec {
+    background-size: 300px 30px;
+  }
+  .listen1 > p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .listen1 > button {
+    margin-bottom: 2rem;
+    width: 10rem;
+    height: 3rem;
+  }
+  .listen2 {
+    width: 60vw;
+    padding-right: 0.5rem;
+    padding-bottom: 3rem;
+  }
+  .instruments {
+    width: 45vw;
+    height: 45vw;
+  }
+  .instruments > img {
+    width: 23%;
+  }
+  .left-button > svg,
+  .right-button > svg {
+    width: 100%;
+  }
+  .play-icon {
+    height: 4rem;
+    width: 4rem;
+  }
+}

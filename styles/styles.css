@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "K2D", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+/* body {
+  overflow-x: hidden;
+} */
+.landing {
+  display: flex;
+  flex-direction: row;
+  height: 120vh;
+}
+.landing-one > img {
+  width: 50vw;
+  height: 100%;
+}
+.landing-two {
+  padding: 9rem 2rem 4rem 2rem;
+  color: #23252d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-height: 100%;
+  background-image: url(/styles/images/Rectangle\ 51.png),
+    url(/styles/images/Rectangle\ 50.png);
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* Blobs Animation Styling */
+
+.background-animation > img {
+  opacity: 0.5;
+  height: 30rem;
+}
+#animate-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: rotate1 7s cubic-bezier(0.6, 0.7, 1, 1) infinite forwards;
+}
+@keyframes rotate1 {
+  0% {
+    transform: translate(0, 0) scale(1.3);
+  }
+  50% {
+    transform: rotate(180deg) translate(150px, -500px) scale(1.5);
+  }
+  100% {
+    transform: translate(0, 0) scaleY(1.3);
+  }
+}
+#animate-2 {
+  /* border: 2px solid forestgreen; */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  animation: rotate2 7s cubic-bezier(0.6, 0.7, 1, 1) infinite forwards;
+}
+@keyframes rotate2 {
+  0% {
+    transform: translate(0, 0) scale(1.3);
+  }
+  50% {
+    transform: rotate(-180deg) translate(-150px, 500px) scale(1.5);
+  }
+  100% {
+    transform: translate(0, 0) scaleY(1.3);
+  }
+}
+.landing-two > h1 {
+  font-family: "K2D";
+  font-weight: 500;
+  font-size: 2.75rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  z-index: 2;
+}
+.landing-two > h1 > strong {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 4.75rem;
+}
+.difference-text {
+  font-style: italic;
+  color: transparent;
+  -webkit-text-stroke: 2px #000000;
+  position: relative;
+}
+.difference-text::before {
+  top: 0;
+  left: 0;
+  content: "DIFFERENCE.";
+  width: 0%;
+  height: 75%;
+  position: absolute;
+  color: #000000;
+  -webkit-text-stroke: 0px transparent;
+  overflow: hidden;
+  transition: width 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.difference-text:hover::before {
+  width: 100%;
+  cursor: pointer;
+}
+.landing-two > p {
+  font-family: "K2D";
+  font-weight: 200;
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  z-index: 2;
+}
+#catalogue-button {
+  text-align: center;
+  font-weight: 700;
+  border: 2px solid #23252d;
+  font-size: 1.25rem;
+  border-radius: 100%;
+  width: 13rem;
+  height: 13rem;
+  background: transparent;
+  z-index: 3;
+}
+@keyframes bouncy {
+  0% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.7);
+  }
+  80% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(0.6);
+  }
+}
+#catalogue-button:hover {
+  background: #23252d;
+  color: #ffffff;
+  cursor: pointer;
+  animation: bouncy 0.5s ease-in-out 1 forwards;
+}
+
+/* Responsiveness for mobile devices and similar screens */
+@media (min-width: 200px) and (max-width: 388px) {
+  /* body {
+    overflow-x: hidden;
+  } */
+  .landing {
+    height: 90vh;
+    width: 100vw;
+  }
+  .landing-one {
+    display: none;
+  }
+  .landing-two {
+    height: fit-content;
+    padding: 3rem 2rem 0.5rem 2rem;
+  }
+  /* Blobs Animation Styling */
+
+  .background-animation > img {
+    height: 18rem;
+    width: 18rem;
+  }
+  @keyframes rotate1 {
+    0% {
+      transform: translate(0, 0) scale(1.4);
+    }
+    50% {
+      transform: rotate(180deg) translate(150px, -500px) scale(1.6);
+    }
+    100% {
+      transform: translate(0, 0) scaleY(1.4);
+    }
+  }
+  @keyframes rotate2 {
+    0% {
+      transform: translate(0, 0) scale(1.4);
+    }
+    50% {
+      transform: rotate(-180deg) translate(-150px, 700px) scale(1.6);
+    }
+    100% {
+      transform: translate(0, 0) scaleY(1.4);
+    }
+  }
+  .landing-two > h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  .landing-two > h1 > strong {
+    font-weight: 700;
+    font-size: 2.75rem;
+  }
+  #catalogue-button {
+    font-size: 1rem;
+    border-radius: 100%;
+    width: 8rem;
+    height: 8rem;
+  }
+}
+@media (min-width: 289px) and (max-width: 660px) {
+  .landing {
+    height: 75vh;
+    width: 100vw;
+  }
+  .landing-one {
+    display: none;
+  }
+  .landing-two {
+    padding: 3rem 2rem 0.5rem 2rem;
+  }
+  /* Blobs Animation Styling */
+
+  .background-animation > img {
+    height: 18rem;
+    width: 18rem;
+  }
+  @keyframes rotate1 {
+    0% {
+      transform: translate(0, 0) scale(1.4);
+    }
+    50% {
+      transform: rotate(180deg) translate(150px, -500px) scale(1.6);
+    }
+    100% {
+      transform: translate(0, 0) scaleY(1.4);
+    }
+  }
+  @keyframes rotate2 {
+    0% {
+      transform: translate(0, 0) scale(1.4);
+    }
+    50% {
+      transform: rotate(-180deg) translate(-150px, 700px) scale(1.6);
+    }
+    100% {
+      transform: translate(0, 0) scaleY(1.4);
+    }
+  }
+  .landing-two > h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  .landing-two > h1 > strong {
+    font-weight: 700;
+    font-size: 2.75rem;
+  }
+  #catalogue-button {
+    font-size: 1rem;
+    border-radius: 100%;
+    width: 8rem;
+    height: 8rem;
+  }
+}
+/* Responsiveness for iPads and similar viewports */
+@media (min-width: 661px) and (max-width: 1199px) {
+  .landing {
+    width: 100vw;
+    height: 90vh;
+  }
+  .background-animation > img {
+    height: 22rem;
+    width: 22rem;
+  }
+
+  /* Blobs Animation Styling */
+  @keyframes rotate1 {
+    0% {
+      transform: translate(0, 0) scale(1.4);
+    }
+    50% {
+      transform: rotate(180deg) translate(150px, -400px) scale(1.6);
+    }
+    100% {
+      transform: translate(0, 0) scaleY(1.4);
+    }
+  }
+  @keyframes rotate2 {
+    0% {
+      transform: translate(0, 0) scale(1.4);
+    }
+    50% {
+      transform: rotate(-180deg) translate(-150px, 700px) scale(1.6);
+    }
+    100% {
+      transform: translate(0, 0) scaleY(1.4);
+    }
+  }
+  #catalogue-button {
+    font-size: 1rem;
+    border-radius: 100%;
+    width: 8rem;
+    height: 8rem;
+  }
+  .landing-two {
+    max-width: 50vw;
+    padding: 2rem 2rem 0.5rem 2rem;
+    justify-content: space-evenly;
+  }
+  .landing-two > h1 > strong {
+    font-size: 2.5rem;
+  }
+}

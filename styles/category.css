@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "K2D", sans-serif;
+}
+.categories {
+  /* border: 2px solid green; */
+  background: linear-gradient(180deg, #ecf2f5 0%, #d0bdcc 100%);
+  /* margin-top: 5rem; */
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+}
+.category-text {
+  font-size: 4.75rem;
+  /* padding-top: 7rem; */
+  margin-bottom: 2rem;
+  margin-left: 9.5%;
+}
+.sub-category {
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  display: grid;
+  grid-template-rows: 3 (1fr);
+  padding: 0 5vw;
+}
+#instrument-1 {
+  grid-area: 1/1/2/2;
+  border-top: 0;
+}
+/* #instrument-strings:hover {
+  border: 4px solid burlywood;
+} */
+#instrument-2 {
+  grid-area: 1/2/2/3;
+}
+#instrument-3 {
+  grid-area: 1/3/2/4;
+}
+#instrument-4 {
+  grid-area: 2/1/3/2;
+}
+#instrument-5 {
+  grid-area: 2/2/3/3;
+}
+#instrument-6 {
+  grid-area: 2/3/3/4;
+}
+.instrument-type {
+  width: 30vw;
+  /* height: 70vh; */
+  border: 2px solid;
+  border-top: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 8rem 0;
+}
+#instrument-2,
+#instrument-3,
+#instrument-5,
+#instrument-6 {
+  border-left: 0;
+}
+#instrument-4,
+#instrument-5,
+#instrument-6 {
+  border-bottom: 0;
+}
+.instrument-type > .instrument-img {
+  display: inline-block;
+  border-radius: 8px;
+  width: 50%;
+  margin: auto;
+  overflow: hidden;
+}
+.instrument-img > img {
+  width: 100%;
+  height: 100%;
+}
+.instrument-img > img:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s linear;
+}
+.instrument-name {
+  /* border: 3px solid green; */
+  font-weight: 700;
+  font-size: 28px;
+}
+.dropdown {
+  position: relative;
+  width: 50%;
+  margin: auto;
+  margin-top: 1.5rem;
+}
+.dropdown-instruments {
+  background-color: transparent;
+  cursor: pointer;
+  color: #65686b;
+  font-size: 1.5rem;
+  /* display: none; */
+  position: absolute;
+}
+a.dropdown-item {
+  display: none;
+  /* font-weight: 500; */
+  font-size: 1.5rem;
+}
+div > .dropdown-instruments {
+  display: none;
+  /* border: 2px solid green; */
+  background-color: transparent;
+  /* color: #65686b; */
+  font-size: 1rem;
+}
+a.dropdown-item:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+/* Dropdown for instrument options, on hover */
+#instrument-1 + #instrument-strings:hover {
+  border: 2px solid violet;
+}
+
+/* Responsiveness for mobile devices S,M,L  */
+@media (min-width: 200px) and (max-width: 660px) {
+  .categories {
+    margin-top: 0;
+    padding-top: 3rem;
+  }
+  .category-text {
+    font-size: 2.75rem;
+    margin-bottom: 1rem;
+  }
+  .sub-category {
+    display: flex;
+    flex-direction: column;
+    /* border-color: green; */
+    padding: 0 10vw;
+  }
+  .instrument-type {
+    width: 80vw;
+    /* height: 70vh; */
+    border: 2px solid;
+    padding: 2rem 0;
+  }
+  #instrument-2,
+  #instrument-3,
+  #instrument-5,
+  #instrument-6 {
+    border-left: 2px solid;
+  }
+  #instrument-1,
+  #instrument-2,
+  #instrument-3,
+  #instrument-6 {
+    border-bottom: 0;
+  }
+  .instrument-name {
+    font-size: 18px;
+    /* margin-top: 1.5rem; */
+  }
+  a.dropdown-item {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 661px) and (max-width: 999px) {
+  .categories {
+    margin-top: 2rem;
+  }
+  .category-text {
+    font-size: 2.75rem;
+    margin-top: 4rem;
+  }
+  .instrument-type {
+    padding: 5rem 0;
+    /* height: 40vh; */
+  }
+  .instrument-type > img {
+    width: 60%;
+  }
+  .instrument-type > span {
+    font-size: 16px;
+  }
+  .instrument-name {
+    font-size: 18px;
+  }
+  a.dropdown-item {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1199px) {
+  .categories {
+    margin-top: 2rem;
+  }
+}

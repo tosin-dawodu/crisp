@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "K2D", sans-serif;
+}
+.whitespace > img {
+  width: 100vw;
+  opacity: 0.4;
+}
+.explore {
+  background: url(/styles/images/pattern.svg),
+    linear-gradient(
+      114.95deg,
+      rgba(0, 0, 0, 0) -11.21%,
+      rgba(205, 165, 178, 0.2) 105.31%
+    ),
+    linear-gradient(180deg, #23252d 53.56%, #8e8f93 148.32%);
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0 6rem 0;
+}
+.explore-heading {
+  font-family: "K2D";
+  font-style: normal;
+  color: #ffffff;
+  padding: 4rem 6rem;
+}
+.explore-heading > h2 {
+  font-weight: 700;
+  font-size: 4.75rem;
+  line-height: 6.125rem;
+  width: 70%;
+}
+.explore-heading > p {
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 100;
+  width: 50%;
+}
+.explore-instruments {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.mini-instruments {
+  width: 20vw;
+}
+.mini-text {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.875rem;
+  text-align: center;
+  padding-bottom: 3rem;
+  color: #ffffff;
+}
+.mini-text > span {
+  color: #dea63a;
+}
+.mini-img {
+  text-align: center;
+  /* border: 3px solid #dea63a8a; */
+  /* border-radius: 100%; */
+}
+.mini-img > img {
+  border-radius: 100%;
+  width: 15vw;
+  height: 15vw;
+}
+/* .mini-text:hover {
+  transform: scaleY(1.3);
+} */
+.mini-img :hover {
+  /* border: 3px solid #dea63a; */
+  border: 3px solid #dea63a8a;
+  padding: 0.3rem;
+  transform: scale(1.3);
+  transition: transform 0.1s ease-in-out;
+  animation: circular 3s linear infinite forwards;
+}
+/* .mini-img > img:hover {
+  border: 5px solid blue;
+  transform: scale(5.5);
+  transition: transform 0.2s linear;
+} */
+@keyframes circular {
+  0% {
+  }
+  10% {
+    /* border-color: conic-gradient(
+      from 0deg at 50% 50%,
+      #dea63a 0deg,
+      rgba(222, 166, 58, 0.541667) 247.5deg,
+      rgba(222, 166, 58, 0.23) 360deg
+    ); */
+    border-color: #dea63a;
+  }
+  40% {
+    /* border-color: conic-gradient(
+      from 0deg at 50% 50%,
+      #dea63a 0deg,
+      rgba(222, 166, 58, 0.541667) 247.5deg,
+      rgba(222, 166, 58, 0.23) 360deg
+    ); */
+    border-color: #dea63a;
+  }
+  70% {
+    /* border-color: conic-gradient(
+      from 0deg at 50% 50%,
+      #dea63a 0deg,
+      rgba(222, 166, 58, 0.541667) 247.5deg,
+      rgba(222, 166, 58, 0.23) 360deg
+    ); */
+    border-color: #dea63a;
+  }
+  100% {
+    border-color: conic-gradient(
+      from 0deg at 50% 50%,
+      #dea63a 0deg,
+      rgba(222, 166, 58, 0.541667) 247.5deg,
+      rgba(222, 166, 58, 0.23) 360deg
+    );
+  }
+}
+.mini-img > img:hover {
+  transform: scale(1.3);
+  transition: transform 0.1s ease-in-out;
+  /* border-radius: 100%; */
+}
+
+/* Why we are the best div styling */
+.best {
+  background: #21282e;
+}
+.best-perfect {
+  color: #dea63a;
+}
+.best-reasons {
+  width: 80vw;
+  border: 2px solid red;
+  color: #ffffff;
+  display: flex;
+  margin: auto;
+  width: 90%;
+  min-height: 40vh;
+}
+.reason-div {
+  border: 2px solid green;
+  display: flex;
+  flex-direction: column;
+  /* padding: 2rem 1rem; */
+  justify-content: center;
+}
+.reason-icon > img {
+  border: 2px solid blue;
+  max-width: 30%;
+}
+
+/* Responsiveness styling */
+
+@media (min-width: 200px) and (max-width: 660px) {
+  .explore-heading {
+    padding: 1rem;
+  }
+  .explore-heading > h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 4rem;
+    width: 100%;
+  }
+  .explore-heading > p {
+    font-size: 1rem;
+    line-height: 2rem;
+    width: 100%;
+  }
+  .explore-instruments {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+  .mini-instruments {
+    margin-top: 2rem;
+    width: 40vw;
+  }
+  .mini-text {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  .mini-img > img {
+    border-radius: 50%;
+    width: 30vw;
+    height: 30vw;
+  }
+}
+@media (min-width: 661px) and (max-width: 999px) {
+  .explore-heading {
+    padding-left: 1rem;
+  }
+  .explore-heading > h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 4rem;
+    width: 80%;
+  }
+  .explore-heading > p {
+    font-size: 1rem;
+    line-height: 2rem;
+    width: 60%;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1199px) {
+}

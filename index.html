@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/listen.css" />
+    <link rel="stylesheet" href="/styles/category.css" />
+    <link rel="stylesheet" href="/styles/explore.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=K2D:wght@100;200;400;500;700&family=Montserrat:wght@100;200;300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>CRISP WEBSITE</title>
+  </head>
+  <body>
+    <!-- The landing viewport -->
+
+    <div class="landing">
+      <div class="landing-one">
+        <img src="/styles/images/landing-1.png" alt="guitar" />
+      </div>
+      <div class="landing-two">
+        <div class="background-animation">
+          <img
+            id="animate-1"
+            src="/styles/images/orange vector.svg"
+            alt="animation"
+          />
+          <img
+            id="animate-2"
+            src="/styles/images/purple vector.svg"
+            alt="animation"
+          />
+        </div>
+        <h1>
+          Feel the <br /><strong
+            class="difference-text"
+            data-fill-text="DIFFERENCE"
+            >DIFFERENCE.</strong
+          >
+        </h1>
+        <h1>Hear the <br /><strong>MAGIC.</strong></h1>
+        <p>
+          Shop our selection of instruments, musical equipment & supplies. Get
+          the lowest prices & free shipping on most orders.
+        </p>
+        <button id="catalogue-button">
+          VIEW <br />
+          CATALOGUE
+        </button>
+      </div>
+    </div>
+
+    <!-- The Listen to the magic screen -->
+
+    <div class="listen-div">
+      <div class="listen1">
+        <h2><span class="h2-rec">Listen</span> to the magic.</h2>
+        <p>
+          Want to know exactly how your favorite instrument sounds before
+          purchasing it? You can now do that right from your device.
+        </p>
+        <button>EXPLORE SOUNDS</button>
+      </div>
+      <div class="listen2">
+        <div class="instruments">
+          <img
+            id="center-instrument"
+            src="/styles/images/guitar.svg"
+            alt="instruments"
+          />
+          <div class="equaliser">
+            <span id="line1"></span>
+            <span id="line2"></span>
+            <span id="line3"></span>
+            <span id="line4"></span>
+          </div>
+
+          <span class="other-instruments play-icon">
+            <svg
+              width="23"
+              height="30"
+              viewBox="0 0 23 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.27274 1.54541L21.4546 15L1.27274 28.4545V1.54541Z"
+                fill="#DEA63A"
+                stroke="#DEA63A"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <span class="other-instruments play-icon" id="pause">
+            <svg
+              width="20"
+              height="27"
+              viewBox="0 0 20 27"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.27274 24.4273V2.22729"
+                stroke="#DEA63A"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M17.0724 24.427V2.22705"
+                stroke="#DEA63A"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <span class="left-button">
+            <svg
+              width="95"
+              height="95"
+              viewBox="0 0 95 95"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                r="47.5"
+                transform="matrix(-1 0 0 1 47.5 47.5)"
+                fill="#21282E"
+              />
+              <path
+                d="M56 46H42"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M49 39L42 46L49 53"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <span class="right-button">
+            <svg
+              width="95"
+              height="95"
+              viewBox="0 0 95 95"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="47.5" cy="47.5" r="47.5" fill="#21282E" />
+              <path
+                d="M39 46H53"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M46 39L53 46L46 53"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <img
+            class="other-instruments instrument1"
+            src="/styles/images/sax.svg"
+            alt="instruments"
+          />
+          <img
+            class="other-instruments instrument2"
+            src="/styles/images/piano.svg"
+            alt="instruments"
+          />
+          <img
+            class="other-instruments instrument3"
+            src="/styles/images/horn.svg"
+            alt="instruments"
+          />
+          <img
+            class="other-instruments instrument4"
+            src="/styles/images/drum.svg"
+            alt="instruments"
+          />
+          <img
+            class="other-instruments instrument5"
+            src="/styles/images/sax.svg"
+            alt="instruments"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Categories viewport -->
+
+    <div class="categories">
+      <h2 class="category-text">Categories</h2>
+      <div class="sub-category">
+        <div class="instrument-type" id="instrument-1">
+          <span class="instrument-img">
+            <img src="/styles/images/cat-guitar.png" alt="instrument" />
+          </span>
+          <!-- <div class="dropdown">
+            <span class="instrument-name">Strings</span>
+            <div class="dropdown-instruments">
+              <ul>
+                <li class="dropdown-item">Acoustic guitar</li>
+                <li class="dropdown-item">Violin</li>
+                <li class="dropdown-item">Electric guitar</li>
+                <li class="dropdown-item">Bass guitar</li>
+                <li class="dropdown-item">Cello</li>
+                <li class="dropdown-item">Double bass</li>
+                <li class="dropdown-item">Viola</li>
+                <li class="dropdown-item">Harp</li>
+                <li class="dropdown-item">Lute</li>
+              </ul>
+            </div>
+          </div> -->
+          <div class="dropdown">
+            <span
+              class="instrument-name"
+              id="instrument-strings"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Strings
+            </span>
+            <div
+              class="dropdown-menu dropdown-instruments"
+              aria-labelledby="dropdownMenuLink"
+            >
+              <a class="dropdown-item">Acoustic guitar</a>
+              <a class="dropdown-item">Violin</a>
+              <a class="dropdown-item">Electric guitar</a>
+              <a class="dropdown-item">Bass guitar</a>
+              <a class="dropdown-item">Cello</a>
+              <a class="dropdown-item">Double bass</a>
+              <a class="dropdown-item">Viola</a>
+              <a class="dropdown-item">Harp</a>
+              <a class="dropdown-item">Lute</a>
+            </div>
+          </div>
+        </div>
+        <div class="instrument-type" id="instrument-2">
+          <span class="instrument-img">
+            <img src="/styles/images/cat-drum.png" alt="instrument" />
+          </span>
+          <div class="dropdown">
+            <span
+              class="instrument-name"
+              id="instrument-percussions"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Percussions
+            </span>
+            <div
+              class="dropdown-menu dropdown-instruments"
+              aria-labelledby="dropdownMenuLink"
+            >
+              <a class="dropdown-item">Drumset</a>
+              <a class="dropdown-item">Electronic drums</a>
+              <a class="dropdown-item">Bongo drums</a>
+              <a class="dropdown-item">Conga drums</a>
+              <a class="dropdown-item">Marimba</a>
+              <a class="dropdown-item">Tamborine</a>
+              <a class="dropdown-item">Hi-hat</a>
+              <a class="dropdown-item">Bass drums</a>
+              <a class="dropdown-item">Snare drums</a>
+            </div>
+          </div>
+        </div>
+        <div class="instrument-type" id="instrument-3">
+          <span class="instrument-img">
+            <img src="/styles/images/cat-horn.png" alt="instrument" />
+          </span>
+          <div class="dropdown">
+            <span
+              class="instrument-name"
+              id="instrument-brass"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Brass
+            </span>
+            <div
+              class="dropdown-menu dropdown-instruments"
+              aria-labelledby="dropdownMenuLink"
+            >
+              <a class="dropdown-item">Trumpet</a>
+              <a class="dropdown-item">Trumbone</a>
+              <a class="dropdown-item">Tuba</a>
+              <a class="dropdown-item">French horn</a>
+              <a class="dropdown-item">Bugle</a>
+              <a class="dropdown-item">Cornet</a>
+            </div>
+          </div>
+        </div>
+        <div class="instrument-type" id="instrument-4">
+          <span class="instrument-img">
+            <img src="/styles/images/cat-sax.png" alt="instrument" />
+          </span>
+          <div class="dropdown">
+            <span
+              class="instrument-name"
+              id="instrument-woodwind"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Woodwind
+            </span>
+            <div
+              class="dropdown-menu dropdown-instruments"
+              aria-labelledby="dropdownMenuLink"
+            >
+              <a class="dropdown-item">Saxophone</a>
+              <a class="dropdown-item">Clarinet</a>
+              <a class="dropdown-item">Flute</a>
+              <a class="dropdown-item">Oboe</a>
+              <a class="dropdown-item">Basson</a>
+            </div>
+          </div>
+        </div>
+        <div class="instrument-type" id="instrument-5">
+          <span class="instrument-img">
+            <img src="/styles/images/cat-piano.png" alt="instrument" />
+          </span>
+          <div class="dropdown">
+            <span
+              class="instrument-name"
+              id="instrument-keyboards"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Keyboards
+            </span>
+            <div
+              class="dropdown-menu dropdown-instruments"
+              aria-labelledby="dropdownMenuLink"
+            >
+              <a class="dropdown-item">Electronic keyboard</a>
+              <a class="dropdown-item">Harpischord</a>
+              <a class="dropdown-item">Accordion</a>
+              <a class="dropdown-item">Synthesiser</a>
+            </div>
+          </div>
+        </div>
+        <div class="instrument-type" id="instrument-6">
+          <span class="instrument-img">
+            <img src="/styles/images/cat-amp.png" alt="instrument" />
+          </span>
+          <div class="dropdown">
+            <span
+              class="instrument-name"
+              id="instrument-amps"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Amps & Accessories
+            </span>
+            <div
+              class="dropdown-menu dropdown-instruments"
+              aria-labelledby="dropdownMenuLink"
+            >
+              <a class="dropdown-item">Amps</a>
+              <a class="dropdown-item">Cases</a>
+              <a class="dropdown-item">Strings</a>
+              <a class="dropdown-item">Stands</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Whitespace div -->
+    <div class="whitespace"><img src="/styles/images/Vector.svg" alt="" /></div>
+
+    <!-- Explore viewport designs -->
+
+    <div class="explore">
+      <div class="explore-heading">
+        <h2>Explore our top 4 best selling instruments.</h2>
+        <p>
+          With over 15 years of being in the industry and almost 1,000,000
+          instruments sold worldwide, here are the top 4 most sold instruments
+          of all time.
+        </p>
+      </div>
+      <div class="explore-instruments">
+        <div class="mini-instruments">
+          <div class="mini-text">
+            6&quot & 7&quot Bongo drum | <span class="mini-price">$59.89</span>
+          </div>
+          <div class="mini-img">
+            <img src="/styles/images/Mini-congo.png" alt="" />
+          </div>
+        </div>
+        <div class="mini-instruments">
+          <div class="mini-text">
+            Trumpet | <span class="mini-price">$269.99</span>
+          </div>
+          <div class="mini-img">
+            <img src="/styles/images/Mini-trumpet.png" alt="" />
+          </div>
+        </div>
+        <div class="mini-instruments">
+          <div class="mini-text">
+            Adult Drumset | <span class="mini-price">$599.99</span>
+          </div>
+          <div class="mini-img">
+            <img src="/styles/images/Mini-drums.png" alt="" />
+          </div>
+        </div>
+        <div class="mini-instruments">
+          <div class="mini-text">
+            Acoustic guitar | <span class="mini-price">$98.99</span>
+          </div>
+          <div class="mini-img">
+            <img src="/styles/images/Mini-guitar.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Why we are the best div -->
+
+    <div class="best">
+      <div class="explore-heading">
+        <h2>Why we are the best in the market.</h2>
+
+        <p>
+          Crisp has been in the market for over 15 years and offer the best
+          hand-crafted instruments made with love. Every instrument is made
+          <span class="best-perfect">PERFECTLY</span> .
+        </p>
+      </div>
+      <div class="best-reasons">
+        <div class="reason-div">
+          <div class="reason-icon"><img src="/styles/images/reason1.svg" alt=""></div>
+          <div class="reason-text">
+            <h4>Hand-crafted with love</h4>
+            <p>
+              All our instrumets are made by hand to ensure premium quality
+              always.
+            </p>
+          </div>
+        </div>
+        <div class="reason-div">
+          <div class="reason-icon"><img src="/styles/images/reason2.svg" alt=""></div>
+          <div class="reason-text">
+            <h4>Best prices guaranteed</h4>
+            <p>
+              All our instrumets are made by hand to ensure premium quality
+              always.
+            </p>
+          </div>
+        </div>
+        <div class="reason-div">
+          <div class="reason-icon"><img src="/styles/images/reason3.svg" alt=""></div>
+          <div class="reason-text">
+            <h4>Quality and perfection</h4>
+            <p>
+              All our instrumets are made by hand to ensure premium quality
+              always.
+            </p>
+          </div>
+        </div>
+        <div class="reason-div">
+          <div class="reason-icon"><img src="/styles/images/reason4.svg" alt=""></div>
+          <div class="reason-text">
+            <h4>15 years of experience</h4>
+            <p>
+              All our instrumets are made by hand to ensure premium quality
+              always.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
