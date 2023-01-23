@@ -16,7 +16,6 @@
       rgba(205, 165, 178, 0.2) 105.31%
     ),
     linear-gradient(180deg, #23252d 53.56%, #8e8f93 148.32%);
-  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   padding: 2rem 0 6rem 0;
@@ -130,32 +129,55 @@
   /* border-radius: 100%; */
 }
 
-/* Why we are the best div styling */
+/* WHY WE ARE THE BEST STYLING*/
 .best {
-  background: #21282e;
+  background: url(/styles/images/pattern.svg), #21282e;
+  padding-bottom: 3rem;
 }
 .best-perfect {
   color: #dea63a;
 }
 .best-reasons {
-  width: 80vw;
-  border: 2px solid red;
+  /* border: 2px solid #ffffff; */
+  border: 2px solid #ffffff;
+  border-left: none;
+  border-right: none;
   color: #ffffff;
   display: flex;
-  margin: auto;
-  width: 90%;
+  /* margin: auto; */
   min-height: 40vh;
+  justify-content: center;
 }
 .reason-div {
   border: 2px solid green;
-  display: flex;
+  border-top: none;
+  border-bottom: none;
+  max-width: 22%;
   flex-direction: column;
-  /* padding: 2rem 1rem; */
+  padding-left: 2rem;
+  padding-top: 2rem;
   justify-content: center;
 }
+#reason1 {
+  border-right: none;
+}
+#reason2 {
+  border-right: none;
+}
+#reason3 {
+  border-right: none;
+}
+.reason-text > h4 {
+  margin-bottom: 1.5rem;
+  font-size: 28px;
+  width: 70%;
+}
+.reason-text > p {
+  font-size: 24px;
+}
 .reason-icon > img {
-  border: 2px solid blue;
   max-width: 30%;
+  margin-bottom: 2rem;
 }
 
 /* Responsiveness styling */
@@ -194,6 +216,46 @@
     width: 30vw;
     height: 30vw;
   }
+
+  /* Why we are the best div styling */
+
+  .best-reasons {
+    border: 2px solid #ffffff;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+  .reason-div {
+    border: 2px solid green;
+    min-width: 80%;
+  }
+  #reason1 {
+    border-right: 2px solid green;
+    border-bottom: none;
+    border-top: none;
+  }
+  #reason2 {
+    border-right: 2px solid green;
+    border-bottom: none;
+  }
+  #reason3 {
+    border-right: 2px solid green;
+    border-bottom: none;
+  }
+  #reason4 {
+    border-bottom: none;
+  }
+  .reason-text > h4 {
+    margin-bottom: 1.5rem;
+    font-size: 28px;
+    width: 70%;
+  }
+  .reason-text > p {
+    font-size: 24px;
+  }
 }
 @media (min-width: 661px) and (max-width: 999px) {
   .explore-heading {
@@ -209,6 +271,38 @@
     font-size: 1rem;
     line-height: 2rem;
     width: 60%;
+  }
+
+  /* WHY WE ARE THE BEST STYLING*/
+  .best-reasons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .reason-div {
+    border: 2px solid #ffffff;
+    max-width: 100%;
+  }
+  #reason1 {
+    border-right: 2px solid #ffffff;
+    border-bottom: none;
+    border-top: none;
+  }
+  #reason2 {
+    border-right: 2px solid #ffffff;
+    border-bottom: none;
+    border-left: none;
+    border-top: none;
+  }
+  #reason3 {
+    border-right: 2px solid #ffffff;
+    border-bottom: none;
+    border-right: none;
+  }
+  #reason4 {
+    border-bottom: none;
   }
 }
 @media (min-width: 1000px) and (max-width: 1199px) {
