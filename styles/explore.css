@@ -149,7 +149,7 @@
   justify-content: center;
 }
 .reason-div {
-  border: 2px solid green;
+  border: 2px solid #ffffff;
   border-top: none;
   border-bottom: none;
   max-width: 22%;
@@ -229,20 +229,20 @@
     margin: auto;
   }
   .reason-div {
-    border: 2px solid green;
+    border: 2px solid #ffffff;
     min-width: 80%;
   }
   #reason1 {
-    border-right: 2px solid green;
+    border-right: 2px solid #ffffff;
     border-bottom: none;
     border-top: none;
   }
   #reason2 {
-    border-right: 2px solid green;
+    border-right: 2px solid #ffffff;
     border-bottom: none;
   }
   #reason3 {
-    border-right: 2px solid green;
+    border-right: 2px solid #ffffff;
     border-bottom: none;
   }
   #reason4 {

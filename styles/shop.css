@@ -6,9 +6,11 @@
 }
 .shop-catalogue {
   position: relative;
-  border: 2px solid red;
+  /* border: 2px solid red; */
+  padding-bottom: 4rem;
 }
 .shop-catalogue::before {
+  z-index: -3;
   content: "";
   background-image: url(/styles/images/pattern.svg);
   /* background-size: cover; */
@@ -16,4 +18,258 @@
   width: 100%;
   height: 100%;
   opacity: 0.05;
+}
+.shop-heading {
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: space-between;
+  padding: 8rem 8rem 2rem 8rem;
+  font-weight: 700;
+  color: #21282e;
+}
+.shop-heading > h2 {
+  /* border: 2px solid green; */
+  font-size: 3.75rem;
+  font-weight: 700;
+}
+.shop-span {
+  background: linear-gradient(
+    90deg,
+    rgba(222, 166, 58, 0.3) -19.81%,
+    #dea63a 109.63%
+  );
+  background-size: 300px 30px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.see-all {
+  border: 2px solid green;
+  font-size: 24px;
+  color: #dea63a;
+  /* border: 2px solid violet; */
+  height: fit-content;
+}
+.see-all:hover {
+  cursor: pointer;
+}
+.sale-instruments {
+  border: 1px solid;
+  border-left: none;
+  border-right: none;
+  display: flex;
+  /* margin-top: 3rem; */
+  overflow-x: auto;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.instrument-details {
+  border: 1px solid #000000;
+  border-top: none;
+  border-bottom: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0.5rem;
+  width: 18.5vw;
+  justify-content: center;
+  align-items: center;
+}
+.detail-img {
+  display: flex;
+  max-width: 80%;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.detail-img > img {
+  width: 100%;
+  height: 100%;
+}
+.detail-img > img:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s linear;
+}
+.detail-name {
+  /* border: 2px solid red; */
+  width: 80%;
+  display: flex;
+  margin-top: 1rem;
+  font-size: 20px;
+}
+.detail-name > p {
+  /* border: 2px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+}
+.detail-span {
+  /* border: 2px solid black; */
+  color: #dea63a;
+  display: block;
+  width: 50%;
+}
+.detail-cart {
+  width: 80%;
+  background-color: #21282e;
+  color: #ffffff;
+  height: 3.375rem;
+  border-radius: 0.5rem;
+  margin-top: 2.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+}
+.detail-cart:hover {
+  background-color: #dea63a;
+  cursor: pointer;
+  border: none;
+}
+#detail1 {
+  border-right: none;
+}
+#detail2 {
+  border-right: none;
+}
+#detail3 {
+  border-right: none;
+}
+#detail4 {
+  border-right: none;
+}
+
+/* Responsiveness for mobile devices S,M,L  */
+@media (min-width: 200px) and (max-width: 660px) {
+  .shop-heading {
+    padding: 1.5rem;
+  }
+  .shop-heading > h2 {
+    font-size: 2rem;
+  }
+  .shop-span {
+    background-size: 300px 15px;
+  }
+  .see-all {
+    font-size: 16px;
+  }
+  .sale-instruments {
+    flex-direction: column;
+    align-items: center;
+  }
+  .instrument-details {
+    border: 1px solid;
+    padding: 3rem 2rem;
+    width: 80vw;
+  }
+  #detail1 {
+    border-top: none;
+    border-right: 1px solid;
+    border-bottom: none;
+  }
+  #detail2 {
+    border-right: 1px solid;
+    border-bottom: none;
+  }
+  #detail3 {
+    border-right: 1px solid;
+    border-bottom: none;
+  }
+  #detail4 {
+    border-right: 1px solid;
+    border-bottom: none;
+  }
+  #detail5 {
+    border-bottom: none;
+  }
+  .detail-cart {
+    width: 70%;
+  }
+}
+@media (min-width: 661px) and (max-width: 999px) {
+  .shop-heading {
+    padding: 4rem 4rem 2rem 2rem;
+  }
+  .sale-holder {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+  }
+  .sale-instruments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: none;
+    border-top: none;
+  }
+  .instrument-details {
+    border: 1px solid;
+    padding: 3rem 2rem;
+    width: 40vw;
+  }
+  #detail1 {
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+  }
+  #detail2 {
+    border-top: none;
+    border-right: 1px solid;
+    border-bottom: none;
+  }
+  #detail3 {
+    border-right: none;
+    border-bottom: none;
+  }
+  #detail4 {
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+  }
+  #detail5 {
+    border-bottom: 1px solid;
+    border-bottom: none;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1400px) {
+  .sale-holder {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+  }
+  .sale-instruments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    width: 84.2vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: none;
+    border-top: none;
+  }
+  .instrument-details {
+    border: 1px solid;
+    padding: 3rem 2rem;
+    width: 28vw;
+  }
+  #detail1 {
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+  }
+  #detail2 {
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+  }
+  #detail3 {
+    border-top: none;
+    border-right: 1px solid;
+    border-right: 1px solid;
+  }
+  #detail4 {
+    border-right: none;
+    border-bottom: none;
+  }
+  #detail5 {
+    border-bottom: 1px solid;
+    border-bottom: none;
+  }
 }

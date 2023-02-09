@@ -247,6 +247,8 @@
   top: 65%;
   right: -7%;
 }
+
+/* Responsiveness for mobile devices S,M,L  */
 @media (min-width: 150px) and (max-width: 499px) {
   .listen-div {
     /* border: 2px solid pink; */
