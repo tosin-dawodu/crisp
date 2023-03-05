@@ -43,15 +43,23 @@
   background-position: bottom;
 }
 .see-all {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   font-size: 24px;
   color: #dea63a;
-  /* border: 2px solid violet; */
   height: fit-content;
 }
 .see-all:hover {
+  padding-left: 1rem;
+  position: relative;
+  right: 1rem;
+  font-size: 24px;
+  color: #21282e;
+  transition: 0.2s ease-in-out;
   cursor: pointer;
 }
+/* #see-arrow {
+  margin-left: 0.5rem;
+} */
 .sale-instruments {
   border: 1px solid;
   border-left: none;
@@ -139,11 +147,18 @@
 /* Responsiveness for mobile devices S,M,L  */
 @media (min-width: 200px) and (max-width: 660px) {
   .shop-heading {
-    padding: 1.5rem;
+    padding: 1rem;
   }
   .shop-heading > h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
+
+  .see-all:hover {
+    padding-left: 0.1rem;
+    right: 1rem;
+    font-size: 1rem;
+  }
+
   .shop-span {
     background-size: 300px 15px;
   }
@@ -186,6 +201,14 @@
 @media (min-width: 661px) and (max-width: 999px) {
   .shop-heading {
     padding: 4rem 4rem 2rem 2rem;
+  }
+   .see-all {
+    margin-top: 1rem;
+   }
+   .see-all:hover {
+    padding-left: 0.1rem;
+    right: 1rem;
+    font-size: 2rem;
   }
   .sale-holder {
     border-top: 1px solid;
@@ -230,6 +253,9 @@
   }
 }
 @media (min-width: 1000px) and (max-width: 1400px) {
+  .see-all {
+    margin-top: 1rem;
+   }
   .sale-holder {
     border-top: 1px solid;
     border-bottom: 1px solid;
