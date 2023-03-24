@@ -45,14 +45,14 @@
   justify-content: space-evenly;
 }
 .mini-instruments {
-  /* border: 2px solid red; */
-  width: 20vw;
+  width: 21vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .mini-text {
+  width: 100%;
   font-size: 1.25rem;
   font-weight: 500;
   line-height: 1.875rem;
@@ -76,23 +76,11 @@
   border-radius: 100%;
   /* overflow: hidden; */
 }
-/* .mini-img::after {
-  content: "";
-  position: absolute;
-  width: 110%;
-  height: 110%;
-  border-radius: 50%;
-  border: 2px solid green;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 100;
-} */
+
 .mini-img > img {
   border-radius: 100%;
   width: 100%;
   height: 100%;
-  /* padding: 0.5rem; */
 }
 .hallow:hover {
   border: 2px solid #dea63a8a;
@@ -127,11 +115,17 @@
   transform: translate(-50%, -50%);
 }
 .mini-button {
-  /* display: none; */
-  visibility: hidden;
+  width: 10vw;
+  border-radius: 3.25rem;
+  color: #ffffff;
+  background-color: #21282e;
+  border: #21282e;
+  height: 3.5rem;
+  margin: 0.3rem;
+  display: none;
 }
-.mini-img:hover > .mini-button {
-  visibility: visible;
+.mini-img:hover .mini-button {
+  display: block;
   width: 10vw;
   border-radius: 3.25rem;
   color: #ffffff;
@@ -194,6 +188,11 @@
 /* Responsiveness styling */
 
 @media (min-width: 200px) and (max-width: 660px) {
+  .explore-instruments {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
   .explore-heading {
     padding: 1rem;
   }
@@ -208,26 +207,32 @@
     line-height: 2rem;
     width: 100%;
   }
-  .explore-instruments {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-  }
-  .mini-instruments {
-    margin-top: 2rem;
-    width: 40vw;
-  }
+
   .mini-text {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 1.5rem;
     padding-bottom: 1rem;
   }
-  .mini-img > img {
-    border-radius: 50%;
-    width: 30vw;
-    height: 30vw;
+  .mini-instruments {
+    width: 80vw;
+    padding-bottom: 2rem;
   }
-
+  .mini-img {
+    width: 60vw;
+    height: 60vw;
+  }
+  .hallow:hover {
+    width: 65vw;
+    height: 65vw;
+  }
+  .mini-button {
+    width: 40vw;
+    font-size: 1.5rem;
+  }
+  .mini-img:hover .mini-button {
+    width: 40vw;
+    height: 4.5rem;
+  }
   /* Why we are the best div styling */
 
   .best-reasons {
@@ -282,6 +287,38 @@
     font-size: 1rem;
     line-height: 2rem;
     width: 60%;
+  }
+
+  .explore-instruments {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+  }
+  .mini-instruments {
+    margin-top: 2.5rem;
+    width: 46vw;
+    display: flex;
+  }
+  .mini-text {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .mini-img {
+    width: 38vw;
+    height: 38vw;
+  }
+  .hallow:hover {
+    width: 42vw;
+    height: 42vw;
+  }
+  .mini-button {
+    width: 30vw;
+  }
+  .mini-img:hover .mini-button {
+    width: 25vw;
   }
 
   /* WHY WE ARE THE BEST STYLING*/

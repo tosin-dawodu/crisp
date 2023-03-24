@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "K2D", sans-serif;
+}
+.instrument-description {
+  border: 2px solid red;
+  background: #293036;
+  background: url(/styles/images/pattern.svg),
+    linear-gradient(180deg, #23252d 53.56%, #8e8f93 148.32%);
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5rem;
+}
+.description-details {
+  color: #ffffff;
+  /* border: 3px solid green; */
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* width: 50vw; */
+}
+.guitar-name > h2 {
+  font-size: 3rem;
+}
+.guitar-name > p {
+  font-size: 1.75rem;
+  color: #b7bbc1;
+}
+.guitar-price {
+  font-weight: 700;
+  font-size: 24px;
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 30%;
+}
+.guitar-price > button {
+  font-weight: 700;
+  font-size: 16px;
+  background: #dea63a;
+  border: #dea63a;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  width: 8rem;
+  height: 3.75rem;
+}
+.guitar-price > button:hover {
+  background: #ffffff;
+  color: #21282e;
+}
+.description-img {
+  border: 1px solid #ffffff;
+  /* max-width: 70vvw; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: none;
+  border-right: none;
+}
+.shop-img > img {
+  width: 60vw;
+  border-radius: 2rem;
+}
+.shop-img {
+  border: 1px solid #ffffff;
+  padding: 1rem;
+  border-top: none;
+  border-bottom: none;
+}
+.description-img > span {
+  margin: 3rem;
+}
+.shop-direction:hover {
+  transform: scale(1.5);
+  transition: transform 0.25s ease-in-out;
+}
+.detailed-content {
+  /* border: 2px solid blue; */
+  height: 100vh;
+  padding-top: 4rem;
+  background: linear-gradient(180deg, #ecf2f5 0%, #d0bdcc 100%);
+}
+.detailed-content > h3 {
+  margin: auto;
+  text-align: justify;
+  font-weight: 700;
+  font-size: 3.25rem;
+  line-height: 4.875rem;
+  color: #647685;
+  width: 90%;
+}
+.detailed-content > h3:hover {
+  color: #21282e;
+  transition: 0.7s;
+}
+.indiana-price {
+  /* border: 2px solid red; */
+  margin-top: 5rem;
+  margin-right: 6rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #647685;
+}
+.indiana-price button {
+  font-weight: 700;
+  font-size: 16px;
+  background: #dea63a;
+  border: #dea63a;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  width: 8rem;
+  height: 3.75rem;
+  margin-left: 4rem;
+}
+.indiana-price button:hover {
+  background: #21282e;
+  color: #ffffff;
+}
